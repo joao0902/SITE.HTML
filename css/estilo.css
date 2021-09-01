@@ -1,0 +1,266 @@
+
+	html{
+		scroll-behavior: smooth;
+	}
+	body{
+
+		background-image: url(../img/planodefundo.jpg);
+		background-repeat: round;
+	}
+	.container{
+		margin-top: 35%;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		position: relative;
+
+	}
+	#sobre{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		margin: 0 auto;
+	}
+	#sobre .sobre{
+		
+		text-align: center;
+	}
+	.imgsobre{
+		width: 20%;
+		height: 20%;
+		border: 5px double #fff;
+		width: 40%;
+		transition: width 2s, height 2s, transform 2s;
+
+	}
+	.imgsobre:hover{
+		 width: 300px;
+		  height: 300px;
+		  transform: rotate(180deg);
+	}
+	#galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		margin: 2px 2px;
+	}
+
+	#galeria .galeria{
+		margin:4px 4px;
+		text-align: center;
+	}
+	.imgaleria{
+		width: 80%;
+		border: 5px double #fff;
+		transition: width 4s, height 4s, transform 4s;
+	}
+	.imgaleria:hover{
+		
+		  transform: rotate(360deg);
+	}
+	
+	header, footer{
+		background-color: rgba(95,158,160);
+		padding: 1%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.0em;
+		line-height: 1.2; 
+	}
+	.fixo{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+	h1{
+		font-size: 2em;
+		font-family: 'Merienda', cursive;
+	}
+	h2{
+		font-size:1.5em;
+		font-family: 'Aladin', cursive;
+		padding: 1%;
+	 
+	}
+	.hh{
+		font-size:1.5em;
+		font-family: 'Aladin', cursive;
+		padding: 1%;
+	 	color: #fff;
+  		text-decoration: initial;
+	}
+	.titulos{
+
+		text-align: center;
+		color: #fff;
+		font-weight: bolder;
+		line-height: 2;
+	}
+	p{
+		color: #fff;
+		font-family: 'Patrick Hand SC', cursive;
+		font-weight: bolder;
+		text-align: justify;
+		font-size: 1.2em;
+		margin-top: 2%;
+		margin-bottom: 2%;
+
+	}
+	.ajustes{
+		line-height: 1;
+		text-align: center;
+		color: #fff;
+		font-family: 'Merienda', cursive;
+
+	}
+	.ajustes li:hover{
+		background-color: #7FFFD4;
+	}
+	.listastextos{
+		text-decoration: underline;
+		color: #fff;
+		font-weight: bolder;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		font-size: 1em;
+	}
+	figure{
+		text-align: center;
+		
+	}
+		.imgtexto{
+			border: 5px double #fff;
+			width: 60%;
+		}
+
+		
+
+	a:link {
+	  color: #00CED1;
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+
+	a:visited {
+	  color: rgb(64,224,208);
+	  background-color: transparent;
+	  text-decoration: none;
+	}
+
+	a:hover {
+	  color: #008B8B;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+
+	a:active {
+	  color: #483D8B;
+	  background-color: transparent;
+	  text-decoration: underline;
+	}
+	table {
+		border-collapse: collapse;
+		width: 80%;
+		color: #fff;
+		font-size: 1.2em;
+		margin-right: auto;
+		margin-left: auto;
+	}
+		td,th{
+			border: 5px double #fff;
+			padding: 2%;	
+		}
+		tr:nth-child(even) {
+	  background-color: rgba(64,224,208,0.5);
+	}
+
+	.fundo{
+		background: rgb(135,206,250);
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 3%;
+		font-size: 1.2em;
+	}
+	.distancia{
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	input[type=text], select, textarea {
+		width: 80%;
+		padding: 12px 20px;
+		display: block;
+		 border: 1px solid #ccc;
+		 border-radius: 6px;
+		 box-sizing: border-box;
+	}
+	input[type=submit] {
+	  width: 100%;
+	  background-color: #4169E1;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+	fieldset{
+		width: 80%;
+		 border: 1px solid #ccc;
+		 padding: 2%;
+
+	}
+	@media screen and (max-width: 599px) {
+	.container{
+		margin-top: 65%;
+	}
+}
+@media screen and (min-width: 600px) {
+	.container{
+		margin-top: 40%;
+	}
+}
+@media screen and (min-width: 768px) {
+	.container{
+		margin-top: 20%;
+	}
+	header{
+		background-color: rgba(64,224,208,0.5);
+		flex-direction: row;
+		font-size: 1.5em;
+		position: relative;
+		height: 150px;
+	}
+	.menu{
+		position: absolute;
+		right: 5%;
+		top: 50%;
+	}
+	.menu ul li{
+			display: inline;
+			margin-left: 10px;
+	}
+	.imglogo{
+			position: absolute;
+			top: 15px;
+			left: 10%;
+		}
+	#sobre, #galeria{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#sobre h1, h2, p {
+		width: 100%;
+		text-align: center;
+	}
+	#sobre .sobre, #galeira .galeria{
+		width: 25%;
+		text-align: center;
+	}
+}
